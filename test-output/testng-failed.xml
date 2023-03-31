@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.EA.utility.ListenerClass"/>
-  </listeners>
-  <test thread-count="5" name="Smoke(failed)">
-    <parameter name="browser" value="Chrome"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.EA.testcases.HomePageTest">
+      <class name="testyou.testcases.HomePageTest">
         <methods>
-          <include name="afterSuite"/>
+          <include name="checkvalidationError"/>
           <include name="submit"/>
           <include name="loadConfig"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.EA.testcases.HomePageTest -->
+      </class> <!-- testyou.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Smoke(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
